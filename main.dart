@@ -1,23 +1,18 @@
+=import 'package:aplikasi_flutter_pertamaku/hello_world.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+ void main() {
+ runApp(const MyApp());
+ }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+ const MyApp({Key? key}) : super(key: key);
 
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Aplikasi Flutter Pertama",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Belajar Flutter'),
-        ),
-        body: const Center(
-          child: Text("Hello World"),
-        ),
-      ),
-    );
-  }
-}
+ @override
+ Widget build(BuildContext context) {
+ Return const MaterialApp(
+ title: "Aplikasi Flutter Pertama",
+ home: HelloWorld(),
+ );
+ }
+ }
